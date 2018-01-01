@@ -13,7 +13,7 @@ public class WelcomePageTest extends GalenTestBase {
     @Test(dataProvider = "devices")
     public void welcomePage_shouldLookGood_onDevice(TestDevice device) throws IOException {
         load("/");
-        checkLayout("/specs/welcomePage.spec", device.getTags());
+        checkLayout("/specs/welcomePage1.gspec", device.getTags());
         
         
     }
